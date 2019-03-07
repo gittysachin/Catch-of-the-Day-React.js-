@@ -55,7 +55,7 @@ class Inventory extends React.Component {
 
   logout = async () => {
     console.log('Logging Out!');
-    await firebase.auth.signOut();
+    await firebase.auth().signOut();
     this.setState({ uid: null });
   }
 
